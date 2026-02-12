@@ -1,38 +1,36 @@
 @import url('https://fonts.googleapis.com');
 body {
-    background-color: #cae7d3;
+    background-color: white;
 }
 h1, h2 {
   text-align: center; 
   font-family: "Quicksand", sans-serif; 
 }
-.ballcontainer {
-    width: var(img_width);
-    height: var(img_height);
-    overflow: hidden;
-    position: relative;
-}
-a {
-    text-decoration: none;
-    margin-right: 10px;
-    font-family: "Poppins",sans-serif;
+.ball {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 .clicker:hover {
-    background-color: #808080;
+    filter: brightness(80%);
 }
 .clicker:active {
-    background-color: #525252;
+    filter: brightness(70%);
 }
 .clicker {
-    display: flex;
+    position: relative;
     color: red;
-    background-color: #ADADAD;
     cursor: pointer;
     text-align: center;
     justify-content: center;
+    overflow: hidden;
     place-items: center;
-    border-radius: 8px;
     margin: auto;
-    height: 40px;
-    width: 100px;
+    height: 400px;
+    width: 400px;
 }
+#pokeball {
+ -webkit-clip-path: circle(20px at 50% 50%);
+  clip-path: circle(20px at 49% 49%)
+}
+
