@@ -1,5 +1,5 @@
 function switchball() {
   const imageElement = document.getElementById('pokeball');
-  imageElement.src = '/public/pokeballs/greatball.png';
+  imageElement.src = '/pokeballs/greatball.png';
   imageElement.alt = 'greatball';
 }
